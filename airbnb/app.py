@@ -11,7 +11,7 @@ def create_app():
     def predict(name=None, message=""):
         try:
             content = request.get_json(force=True)
-            
+            # prediction = get_predicted_price(content)
         except Exception as identifier:
             message = f'error: {identifier}'
         return message

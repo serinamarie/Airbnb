@@ -2,7 +2,6 @@ from flask import Flask, request
 
 def create_app():
     app = Flask(__name__)
-    DB.init_app(app)
 
     @app.route('/')
     def root():
@@ -15,7 +14,7 @@ def create_app():
                 if request.method == 'POST':
                     return name
             except Exception as e:
-                message = f"Error adding: {e}"
+                return 'error'
     
     return app
 

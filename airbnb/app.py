@@ -8,8 +8,9 @@ def create_app():
         return 'airbnb predictive project'
 
     @app.route('/predict', methods=['POST'])
-    def predict(name=None, message=""):
+    def predict(message=""):
         try:
+            # find authorization header
             content = request.get_json(force=True)
             message = f'POST response recieved: {content}'
             # prediction = get_predicted_price(content)
@@ -18,6 +19,8 @@ def create_app():
         return message
     
     return app
+
+#  FLASK_APP=airbnb:APP FLASK_ENV=development flask run 
 
 # def tokenize(text):
 #     return [

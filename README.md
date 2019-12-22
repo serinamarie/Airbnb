@@ -38,4 +38,19 @@ flask run
 
 ## Endpoints
 
+### POST /predict
 
+Accepts the following JSON object parameters:
+
+```
+{
+    beds: int
+    baths: int
+    season: int
+    has_wifi: int
+    allows_pets: int
+    predicted_price: int 
+}
+```
+
+Returns the same JSON object with a predicted price for that day.

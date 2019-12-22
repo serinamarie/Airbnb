@@ -4,7 +4,10 @@ An API to predict daily AirBnB rates in Tokyo from property features.
 
 ## Getting Started
 
-This section is dedicated to software developers that want to contribute to this API. You must have pipenv installed.
+This section is dedicated to software developers that want to contribute to this API. You must have `pipenv` installed on your local machine to continue.
+
+[Pipenv: Python Development Workflow for Humans
+](https://github.com/pypa/pipenv)
 
 ### Environment Variables
 
@@ -14,7 +17,7 @@ If you have been provided rights, simply clone this repo. If not, you may fork a
 git clone <url>
 ```
 
-To run locally, you must first create a local .env in the main directory and add the following variables:
+Once cloned, create a `.env` file in the main directory and add the following variables:
 
 ```
 FLASK_APP=airbnb:APP 
@@ -30,7 +33,7 @@ pipenv install
 
 ### Start the API
 
-Run the following command to start the API:
+Finally, you can run the following command to start the API:
 
 ```
 flask run
@@ -53,4 +56,4 @@ Accepts the following JSON object parameters:
 }
 ```
 
-Returns the same JSON object with a predicted price for that day.
+Currently returns the same object. Working on predictive functionality.

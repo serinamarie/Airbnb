@@ -39,3 +39,4 @@ Thumbs.db
 # Custom #
 ##########
 .vscode
+.env
